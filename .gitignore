@@ -1,0 +1,8 @@
+# .gitignore
+.venv/
+.idea/
+# git init
+# git add .
+#git commit -m "
+#git remote add origin
+
