@@ -2,11 +2,12 @@
 # pip install yt-dlp
 import yt_dlp
 
-video_url = "https://www.youtube.com/watch?v=8QQG6G0_kOQ"
+video_url = "https://www.youtube.com/watch?v=L1bg_h9DI5g"
 
 # Configuration options (mimics command-line flags)
 ydl_opts = {
     "format": "bestaudio/best",
+"ffmpeg_location": r"C:\ffmpeg-9.0.2-full_build\bin",
     "postprocessors": [
         {
             "key": "FFmpegExtractAudio",

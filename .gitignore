@@ -2,10 +2,13 @@
 .venv/
 .idea/
 *.mp3
-*.txt
+data.txt
 *.webm
+.mp3
+
 # git init
 # git add .
 #git commit -m "
 #git remote add origin
+# pip freeze > requirements.txt
 
