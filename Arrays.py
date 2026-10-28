@@ -51,4 +51,7 @@ watu = [{"name":"Sila","age":22},
 print (watu[1]["name"])
 
 # loops
+# git pull bringing changes in your pycham before you push the changes in git
 
+# bitbucket
+# gitlab
