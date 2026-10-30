@@ -2,13 +2,16 @@
 .venv/
 .idea/
 *.mp3
-data.txt
+*.txt
 *.webm
 .mp3
+!requirements.txt
+# !tells your machine to be pushed to github
 
 # git init
 # git add .
-#git commit -m "
+#git commit -m ""
 #git remote add origin
+# git push-u origin master/main
 # pip freeze > requirements.txt
 

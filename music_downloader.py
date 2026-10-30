@@ -21,3 +21,6 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     ydl.download([video_url])
 
 print("Download complete!")
+# https://justpaste.it/iq3it
+# winget install --id Gyan.FFmpeg -e
+# 'ffmpeg_location': r'C:\ffmpeg\bin',

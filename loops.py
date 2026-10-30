@@ -31,3 +31,15 @@ avg = total/len(students)
 print(avg)
 #lambda expression
 # TODO sort the list/filter
+# TODO sort the list / filter
+# sort the list / filter
+def get_key(student):
+    return student["age"]
+
+#  lambda s: s['age']
+age_sorted = sorted(students, key= lambda s: s['age'])
+
+for student in age_sorted:
+    print(student)
+
+# Get the oldest person from Nigeria
