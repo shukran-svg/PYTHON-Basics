@@ -22,16 +22,16 @@ students = [{"name":"Emerald Bowen","email":"ullamcorper.nisl@yahoo.org","countr
     #if country=="Nigeria":
      #print(f"Name is {name} and Citizen of {country} and {age} years old")
 
-total = 0
-for s in students :
-    age = s["age"]
-    total = total + age
+#total = 0
+#for s in students :
+   # age = s["age"]
+   # total = total + age
 
-avg = total/len(students)
-print(avg)
+#avg = total/len(students)
+#print(avg)
 #lambda expression
-# TODO sort the list/filter
-# TODO sort the list / filter
+# sort the list/filter
+#
 # sort the list / filter
 def get_key(student):
     return student["age"]
@@ -43,3 +43,7 @@ for student in age_sorted:
     print(student)
 
 # Get the oldest person from Nigeria
+nigerian_students = [student for student in students if student["country"] == "Nigeria"]
+if nigerian_students:
+    oldest_nigerian = max(nigerian_students, key=lambda x: x['age'])
+    print(oldest_nigerian)
