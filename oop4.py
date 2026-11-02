@@ -20,6 +20,8 @@ class Employee:
         print(self.departments)
         print(self.gender)
         print("***********")
+    def print_name(self):
+            print(f"Name is {self.full_names}")
 
 
 
@@ -45,3 +47,5 @@ c1 = CasualWorker("Jack Ma", "4444333", "Sales", "M", 356)
 s1.print_details()
 c1.print_details()
 print(c1.calc_wage(19))
+
+c1.print_name()
