@@ -1,0 +1,42 @@
+{% extends 'master.html' %}
+{%load static %}
+
+{% block title %}Home {% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <table class="table animate__animated animate__zoomIn ">
+
+                <tr>
+                    <th>Name</th>
+                    <th>English</th>
+                    <th>Math</th>
+                    <th>Chem</th>
+                    <th>Bio</th>
+                    <th>Total</th>
+                </tr>
+                {% for score in scores %}
+                <tr>
+                    <td>{{score.names}}</td>
+                    <td>{{score.english}}</td>
+                    <td>{{score.maths}}</td>
+                    <td>{{score.chemistry}}</td>
+                    <td>{{score.biology}}</td>
+                    <td></td>
+                </tr>
+                {%endfor%}
+            </table>
+        </div>
+    </div>
+</div>
+{%endblock%}
+{% block extra_links %}
+
+<link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+{% endblock %}
